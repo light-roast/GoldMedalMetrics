@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HG8KR790SJHDAQD97NKNXAMH
+  version: v2.0
+---
+
 # Gold Medal Metrics
 
 ## Project Overview
@@ -6,21 +12,21 @@ In this project you will be writing all the SQL statements for an Olympic metric
 
 Gold Medal Metrics allows users to:
 
- - View countries in a list with their population, GDP, and number of Olympic gold medals.
- - Sort the list of countries by any of these attributes, as well as alphabetically by name.
- - View a detailed description of a country, with statistics on their Olympic wins.
- - View a list of every Olympic win a country has with the year, season, winner name, city, and event.
- - Sort the list of Olympic wins by any of these attributes.
+- View countries in a list with their population, GDP, and number of Olympic gold medals.
+- Sort the list of countries by any of these attributes, as well as alphabetically by name.
+- View a detailed description of a country, with statistics on their Olympic wins.
+- View a list of every Olympic win a country has with the year, season, winner name, city, and event.
+- Sort the list of Olympic wins by any of these attributes.
 
 ## How To Begin
 
-To start, download the starting code for this project <a href="https://s3.amazonaws.com/codecademy-content/PRO/skill-paths/backend-javascript/projects/gold-medal-metrics/project-5-gold-medal-metrics-start.zip" target="_blank">here</a>. After downloading the zip folder, double click it to uncompress it and access the contents of this project.
+To start, download the starting code for this project here. After downloading the zip folder, double click it to uncompress it and access the contents of this project.
 
 To view the webpage, run `npm run webpack` to compile the front-end files, and follow that with `open index.html` from the root directory of this project. To start your server, run `npm install` and then `node server.js`. Refresh your browser to collect the information from the server. Every time you change **server.js**, you will have to restart your server before the changes will take effect. To do this press "control + c" in the bash terminal where your server is running (or close the terminal) to shut it down and then re-run `node server.js` to start it again. While your server is running, you will not be able to run commands in the bash terminal, so open a new terminal if you want to run other commands.
 
 ## Implementation Details
 
-To complete this project, you will need to write a series of JavaScript functions that return the SQL queries (as strings) that operate Gold Medal Metrics. The functions themselves are stubbed out in **sql.js** with comments about the query each should return. Below we list the different functions and the expected returned query.
+### To complete this project, you will need to write a series of JavaScript functions that return the SQL queries (as strings) that operate Gold Medal Metrics. The functions themselves are stubbed out in **sql.js** with comments about the query each should return. Below we list the different functions and the expected returned query.
 
 ### Gold Medal Metric Functions
 
@@ -28,25 +34,25 @@ To complete this project, you will need to write a series of JavaScript function
 
 Returns the SQL command that will create a table, named `Country` with the following columns:
 
- - `name` a required text field.
- - `code` a required text field.
- - `gdp` an integer.
- - `population` an integer.
+- `name` a required text field.
+- `code` a required text field.
+- `gdp` an integer.
+- `population` an integer.
 
 #### createGoldMedalTable
 
 Returns the SQL command that will create a table, named `GoldMedal` with the following columns:
 
- - `id` an integer that will function as the primary key.
- - `year` a required integer.
- - `city` a required text field.
- - `season` a required text field.
- - `name` a required text field.
- - `country` a required text field.
- - `gender` a required text field.
- - `sport` a required text field.
- - `discipline` a required text field.
- - `event` a required text field.
+- `id` an integer that will function as the primary key.
+- `year` a required integer.
+- `city` a required text field.
+- `season` a required text field.
+- `name` a required text field.
+- `country` a required text field.
+- `gender` a required text field.
+- `sport` a required text field.
+- `discipline` a required text field.
+- `event` a required text field.
 
 #### goldMedalNumber
 
